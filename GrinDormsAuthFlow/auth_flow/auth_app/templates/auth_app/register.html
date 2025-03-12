@@ -1,0 +1,18 @@
+<html>
+    
+    <h1> GrinDorms Registration Page </h1>
+
+    <p style="color:red;">
+        Please use your Grinnell email when creating an account. 
+    </p>
+
+    <form method="POST" autocomplete="off">
+
+        {% csrf_token %}
+
+        {{registerform.as_p}}
+
+        <input type="submit" value="Register"/>
+
+    </form>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    
+    <h1> GrinDorms Login Page </h1>
+
+    <form method="POST" autocomplete="off">
+
+        {% csrf_token %}
+
+        {{loginform.as_p}}
+
+        
+
+        <input type="submit" value="Log In"/>
+
+</html>
