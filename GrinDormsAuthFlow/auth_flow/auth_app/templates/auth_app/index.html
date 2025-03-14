@@ -2,7 +2,13 @@
     
     <h1> This is the homepage! </h1>
 
-    
+    {% for message in messages %}
+    <div class="message {{message.tags}}">
+        {{message}}
+    {%endfor%}
+
+    </div>
+
     <a href="{% url 'my-login'%}" > Sign-in </a>
     
     <br> <br>
